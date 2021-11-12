@@ -92,4 +92,8 @@
         <name>DEVHUB_1zq0o68fy85xde5ps8ve</name>
         <type>ConnectedApp</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>Travel_App</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
 </AppMenu>
