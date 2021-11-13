@@ -149,36 +149,81 @@
     <enableHistory>false</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
-    <enableSearch>true</enableSearch>
+    <enableSearch>false</enableSearch>
     <enableSharing>true</enableSharing>
     <enableStreamingApi>true</enableStreamingApi>
-    <externalSharingModel>Private</externalSharingModel>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
     <fields>
-        <fullName>Department_Code__c</fullName>
-        <caseSensitive>true</caseSensitive>
-        <externalId>true</externalId>
-        <label>Department Code</label>
-        <length>10</length>
+        <fullName>Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount</label>
+        <precision>18</precision>
         <required>true</required>
+        <scale>2</scale>
         <trackTrending>false</trackTrending>
-        <type>Text</type>
-        <unique>true</unique>
+        <type>Currency</type>
     </fields>
-    <label>Department</label>
-    <listViews>
-        <fullName>All</fullName>
-        <columns>NAME</columns>
-        <columns>Department_Code__c</columns>
-        <columns>UPDATEDBY_USER</columns>
-        <filterScope>Everything</filterScope>
-        <label>All</label>
-    </listViews>
+    <fields>
+        <fullName>Expense_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Expense Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Airfare</fullName>
+                    <default>false</default>
+                    <label>Airfare</label>
+                </value>
+                <value>
+                    <fullName>Hotel</fullName>
+                    <default>false</default>
+                    <label>Hotel</label>
+                </value>
+                <value>
+                    <fullName>Rental car</fullName>
+                    <default>false</default>
+                    <label>Rental car</label>
+                </value>
+                <value>
+                    <fullName>Meals</fullName>
+                    <default>false</default>
+                    <label>Meals</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Travel_Approval__c</fullName>
+        <externalId>false</externalId>
+        <label>Travel Approval</label>
+        <referenceTo>Travel_Approval__c</referenceTo>
+        <relationshipLabel>Expense Items</relationshipLabel>
+        <relationshipName>Expense_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <label>Expense Item</label>
     <nameField>
-        <label>Department Name</label>
-        <type>Text</type>
+        <displayFormat>E-{00000}</displayFormat>
+        <label>Expense Item Number</label>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Departments</pluralLabel>
+    <pluralLabel>Expense Items</pluralLabel>
     <searchLayouts/>
-    <sharingModel>ReadWrite</sharingModel>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
     <visibility>Public</visibility>
 </CustomObject>

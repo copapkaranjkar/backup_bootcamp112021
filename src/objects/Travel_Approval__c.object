@@ -143,10 +143,10 @@
     <allowInChatterGroups>false</allowInChatterGroups>
     <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
     <deploymentStatus>Deployed</deploymentStatus>
-    <enableActivities>false</enableActivities>
+    <enableActivities>true</enableActivities>
     <enableBulkApi>true</enableBulkApi>
     <enableFeeds>false</enableFeeds>
-    <enableHistory>false</enableHistory>
+    <enableHistory>true</enableHistory>
     <enableLicensing>false</enableLicensing>
     <enableReports>true</enableReports>
     <enableSearch>true</enableSearch>
@@ -154,31 +154,151 @@
     <enableStreamingApi>true</enableStreamingApi>
     <externalSharingModel>Private</externalSharingModel>
     <fields>
-        <fullName>Department_Code__c</fullName>
+        <fullName>Department__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Department</label>
+        <referenceTo>Department__c</referenceTo>
+        <relationshipLabel>Travel Approvals</relationshipLabel>
+        <relationshipName>Travel_Approvals</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Destination_State__c</fullName>
+        <externalId>false</externalId>
+        <label>Destination State</label>
+        <length>2</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
         <caseSensitive>true</caseSensitive>
         <externalId>true</externalId>
-        <label>Department Code</label>
-        <length>10</length>
+        <label>External Id</label>
+        <length>18</length>
         <required>true</required>
+        <trackHistory>false</trackHistory>
         <trackTrending>false</trackTrending>
         <type>Text</type>
         <unique>true</unique>
     </fields>
-    <label>Department</label>
+    <fields>
+        <fullName>Out_of_State__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Out-of-State</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Purpose_of_Trip__c</fullName>
+        <externalId>false</externalId>
+        <label>Purpose of Trip</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Submitted</fullName>
+                    <default>false</default>
+                    <label>Submitted</label>
+                </value>
+                <value>
+                    <fullName>Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+                <value>
+                    <fullName>Draft</fullName>
+                    <default>false</default>
+                    <label>Draft</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Trip_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Trip End Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Trip_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Trip Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Travel Approval</label>
     <listViews>
         <fullName>All</fullName>
         <columns>NAME</columns>
-        <columns>Department_Code__c</columns>
-        <columns>UPDATEDBY_USER</columns>
+        <columns>External_Id__c</columns>
+        <columns>Purpose_of_Trip__c</columns>
+        <columns>Status__c</columns>
+        <columns>Trip_Start_Date__c</columns>
+        <columns>Trip_End_Date__c</columns>
+        <columns>Destination_State__c</columns>
+        <columns>Out_of_State__c</columns>
+        <columns>Department__c</columns>
         <filterScope>Everything</filterScope>
         <label>All</label>
     </listViews>
     <nameField>
-        <label>Department Name</label>
-        <type>Text</type>
+        <displayFormat>TA-{00000}</displayFormat>
+        <label>Travel Approval #</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
     </nameField>
-    <pluralLabel>Departments</pluralLabel>
+    <pluralLabel>Travel Approvals</pluralLabel>
     <searchLayouts/>
     <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Destination_State_must_be_uppercase</fullName>
+        <active>true</active>
+        <errorConditionFormula>Destination_State__c &lt;&gt; UPPER( Destination_State__c )</errorConditionFormula>
+        <errorDisplayField>Destination_State__c</errorDisplayField>
+        <errorMessage>Destination State must be entered in UPPERCASE</errorMessage>
+    </validationRules>
     <visibility>Public</visibility>
 </CustomObject>

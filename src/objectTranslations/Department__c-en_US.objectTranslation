@@ -12,5 +12,12 @@
         <label><!-- Department Code --></label>
         <name>Department_Code__c</name>
     </fields>
+    <layouts>
+        <layout>Department Layout</layout>
+        <sections>
+            <label><!-- Custom Links --></label>
+            <section>Custom Links</section>
+        </sections>
+    </layouts>
     <startsWith>Consonant</startsWith>
 </CustomObjectTranslation>
