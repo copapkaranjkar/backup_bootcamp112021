@@ -7425,9 +7425,10 @@ IMAGE(&quot;/img/samples/color_yellow.gif&quot;, &quot;white&quot;, 15,
     </listViews>
     <listViews>
         <fullName>copado__All</fullName>
+        <columns>RECORDTYPE</columns>
         <columns>NAME</columns>
         <columns>Sequence__c</columns>
-        <columns>RECORDTYPE</columns>
+        <columns>copado__Promote_Change__c</columns>
         <columns>copado__User_Story_Title__c</columns>
         <columns>copado__Status__c</columns>
         <columns>copado__Priority__c</columns>
