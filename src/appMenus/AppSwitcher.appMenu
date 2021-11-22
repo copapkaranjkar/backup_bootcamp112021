@@ -96,4 +96,12 @@
         <name>Travel_App</name>
         <type>CustomApplication</type>
     </appMenuItems>
+    <appMenuItems>
+        <name>tdc_tua__Email_Unsubscribe_Opt_Out</name>
+        <type>CustomApplication</type>
+    </appMenuItems>
+    <appMenuItems>
+        <name>PE_Email_Subscribe_Unsubscribe</name>
+        <type>ConnectedApp</type>
+    </appMenuItems>
 </AppMenu>
