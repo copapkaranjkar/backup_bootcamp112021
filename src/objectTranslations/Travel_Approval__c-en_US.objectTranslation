@@ -80,6 +80,10 @@
             <section>Custom Links</section>
         </sections>
     </layouts>
+    <recordTypes>
+        <label><!-- Test Deletion --></label>
+        <name>Test_Deletion</name>
+    </recordTypes>
     <startsWith>Consonant</startsWith>
     <validationRules>
         <errorMessage><!-- Destination State must be entered in UPPERCASE --></errorMessage>
