@@ -77,6 +77,10 @@
         <label><!-- check retrieve commit feature --></label>
         <name>check_retrieve_commit_feature__c</name>
     </fields>
+    <fields>
+        <label><!-- field 2 --></label>
+        <name>field_2__c</name>
+    </fields>
     <layouts>
         <layout>Travel Approval Layout</layout>
         <sections>

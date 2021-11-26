@@ -40,6 +40,10 @@
                 <behavior>Edit</behavior>
                 <field>check_retrieve_commit_feature__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>field_2__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
