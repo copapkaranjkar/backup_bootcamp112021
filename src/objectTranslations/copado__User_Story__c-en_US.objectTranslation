@@ -13,6 +13,10 @@
         <name>copado__Commit_Files_Information</name>
     </fieldSets>
     <fieldSets>
+        <label><!-- Commit Page --></label>
+        <name>copado__Commit_Page</name>
+    </fieldSets>
+    <fieldSets>
         <label><!-- Copado Header Fields --></label>
         <name>copado__Copado_Header_Fields</name>
     </fieldSets>
@@ -63,6 +67,62 @@
     <fields>
         <label><!-- Sequence --></label>
         <name>Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Value Stream Status --></label>
+        <name>Value_Stream_Status__c</name>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design In Progress</masterLabel>
+            <translation><!-- Design In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Development In Progress</masterLabel>
+            <translation><!-- Development In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Design</masterLabel>
+            <translation><!-- Ready for Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Development</masterLabel>
+            <translation><!-- Ready for Development --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Release</masterLabel>
+            <translation><!-- Ready for Release --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Technical Review</masterLabel>
+            <translation><!-- Ready for Technical Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for Testing</masterLabel>
+            <translation><!-- Ready for Testing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Release In Progress</masterLabel>
+            <translation><!-- Release In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Released</masterLabel>
+            <translation><!-- Released --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Technical Review in Progress</masterLabel>
+            <translation><!-- Technical Review in Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Testing In Progress</masterLabel>
+            <translation><!-- Testing In Progress --></translation>
+        </picklistValues>
     </fields>
     <fields>
         <label><!-- Acceptance Criteria Status --></label>

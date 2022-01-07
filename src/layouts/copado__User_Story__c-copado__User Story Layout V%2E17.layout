@@ -65,6 +65,10 @@
                 <behavior>Readonly</behavior>
                 <field>copado__Platform__c</field>
             </layoutItems>
+            <layoutItems>
+                <behavior>Edit</behavior>
+                <field>Value_Stream_Status__c</field>
+            </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
