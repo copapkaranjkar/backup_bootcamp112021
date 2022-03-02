@@ -4,6 +4,7 @@
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
     <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <isNavTabPersistenceDisabled>false</isNavTabPersistenceDisabled>
     <label>Email Opt In - Opt Out App</label>
     <logo>tdc_tua__Opt_Out_App/tdc_tua__Opt_Out_App_Logo.png</logo>
     <tabs>standard-Lead</tabs>
