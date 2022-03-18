@@ -259,6 +259,11 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.test_field__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
         <editable>false</editable>
         <field>Asset.AccountId</field>
         <readable>false</readable>
@@ -4073,6 +4078,11 @@
         <field>tdc_tua__Setup__c.tdc_tua__Unsubscribe_heading_Font_Size__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>test_mdt2__mdt.check__c</field>
+        <readable>false</readable>
+    </fieldPermissions>
     <layoutAssignments>
         <layout>AuthorizationForm-Authorization Form Layout</layout>
     </layoutAssignments>
@@ -4145,6 +4155,12 @@
     <layoutAssignments>
         <layout>Travel_Approval__c-Travel Approval Layout</layout>
         <recordType>Travel_Approval__c.Test_Deletion</recordType>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>test_mdt2__mdt-test mdt2 Layout</layout>
+    </layoutAssignments>
+    <layoutAssignments>
+        <layout>test_mdt_1__mdt-test mdt 1 Layout</layout>
     </layoutAssignments>
     <objectPermissions>
         <allowCreate>false</allowCreate>
